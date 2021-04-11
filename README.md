@@ -10,8 +10,8 @@ Original Link ( https://github.com/NewWayRP/new_banking )
 
 # Changes
 
-- Old Version 0.06
-- New Version 0.01
+- Old Version 0.06 ms
+- New Version 0.01 ms
 - New Cleaner UI
 - Everything Usses Command
 - Configurable
