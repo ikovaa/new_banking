@@ -27,8 +27,8 @@ Original Link ( https://github.com/NewWayRP/new_banking/blob/master/client/clien
 
 ## Commands
 
-> /bank Open Bank UI when near Bank 
-> /atm Open Bank UI when near ATM
+> /bank Open Bank UI when near Bank | 
+> /atm Open Bank UI when near ATM |
 > /closebank Closes both UI if bugged
 
 
