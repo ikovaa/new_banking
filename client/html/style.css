@@ -1,0 +1,377 @@
+
+
+@font-face {
+    font-family: vision-heavy;
+    src: url(media/font/Vision-Heavy.otf);
+}
+
+html, body, p, button{
+	padding: 0;
+	margin: 0;
+	user-select: none;
+	color: white;
+	font-family: 'vision-heavy', sans-serif;
+	text-transform: uppercase;
+}
+
+body.active{
+	background-color: rgba(0,0,0,0.5);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  	-webkit-appearance: none;
+  	margin: 0;
+}
+
+*:focus, textarea:focus, input:focus{
+    outline: none;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -450px;
+	height: 600px;
+	width: 900px;
+	background-color: transparent;
+}
+
+.cont-content{
+	height: calc(100% - 179px);
+	width: calc(100% - 120px);
+	padding: 60px;
+	border-radius: 0 0 10px 10px;
+	background: linear-gradient(to top, rgba(20,21,50,0), rgba(20,21,50,0.5), rgba(20,21,50,1));
+}
+
+.cont-waiting{
+	background: #f9f9f9;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.flex{
+	display: flex;
+}
+
+/*####     BUTTON     ####*/
+button {
+	cursor: pointer;
+	border: 0;
+}
+
+.btn{
+	width: 236px;
+	height: 77px;
+	font-size: 22px;
+	position: relative;
+	overflow: hidden;
+	text-align: left;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+	border-radius: 10px;
+}
+
+.btn p {
+	position: absolute;
+	left: 70px;
+	bottom: 35%;
+}
+
+.btn .icon{
+	line-height: 38px;
+    margin-right: 20px;
+}
+
+.btn span:last-child{
+	font-size: 15px;
+}
+
+.btn i{
+	position: absolute;
+   	transform: rotate(10deg);
+    font-size: 130px;
+   	left: -19%;
+  	top: -34%;
+	opacity: 0.1;
+	transition-duration: 0.3s;
+}
+
+.btn-blue{
+	background: #3a93e5;
+}
+
+.btn-violet{
+	background: #a555e9;
+}
+
+.btn-orange{
+	background: #e5873b;
+}
+
+.btn-green{
+	background: #7cb732;
+}
+
+.btn-grey{
+	background: #a0a0a0;
+}
+
+.btn:hover i{
+	transform: rotate(0deg);
+	font-size: 150px;
+}
+
+/*####     TOP BAR     ####*/
+
+.topbar {
+	background: rgba(20,21,50,1);
+	height: 59px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px 10px 0 0;
+}
+
+nav {
+	width: calc(100% - 40px);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.btn-sign-out {
+	background: rgba(0,0,0,0);
+	font-size: 20px;
+}
+
+.btn-sign-out i {
+	font-size: 15px;
+    margin-left: 20px;
+    transition-duration: 0.3s;
+}
+
+.btn-sign-out:hover i {
+	margin-left: 10px;
+}
+
+.logo-topbar {
+	height: 32px;
+	width: 108px;
+	background: url(media/img/logo-top.png) no-repeat center;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+
+/*####     MAIN MENU     ####*/
+
+.balance {
+	width: 400px;
+   	height: 180px;
+	margin-right: 60px;
+	padding: 40px;
+	color: #414141;
+	font-size: 16px;
+
+    gap: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.6) 2px 8px 8px;
+
+}
+
+.balance .name {
+	font-size: 25px;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.balance .money {
+	font-size: 60px;
+}
+.list-btn {
+	height: 263px;
+	width: 236px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+/*####     WITHDRAW MENU     ####*/
+
+.banniere {
+	width: 464px;
+	margin-right: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+form {
+	margin-top: 60px;
+}
+
+label {
+	margin-bottom: 10px;
+	font-size: 17px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.input-cont {
+	width: 178px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 60px;
+	border-radius: 10px;
+}
+
+.second {
+	width: 80px;
+}
+
+.input-cont input{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	border: 0;
+	font-size: 60px;
+	color: white;
+	font-family: 'vision-heavy', sans-serif;
+	background-color: transparent;
+}
+
+.input-cont input::-webkit-input-placeholder {
+  	color: white;
+	font-family: 'vision-heavy', sans-serif;
+}
+
+.double-input {
+	width: 485px;
+	display: flex;
+	justify-content: space-between;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.double-input input {
+	font-size: 50px;
+}
+
+/*####     WAITING     ####*/
+
+.bg-waiting {
+	width: 1000px;
+	height: 450px;
+	background: linear-gradient(to top, rgba(20,21,50, 0), rgba(20,21,50, 0.8), rgba(20,21,50, 1));
+	position: relative;
+	top: -70px;
+	left: -70px;
+}
+
+.mainlogo {
+	margin: auto;
+	width: 320px;
+    height: 150px;
+	margin-top: 70px;
+
+	background: url(media/img/logo-big.png) no-repeat center;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+
+.content-waiting {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 1;
+	width: 410px;
+	position: absolute;
+	left: 50%;
+	text-align: center;
+	margin-left: -205px;
+	font-size: 30px;
+}
+
+#waiting {
+	border-radius: 10px;
+	background: transparent;
+}
+
+#fingerprint-content {
+	position: relative;
+	margin:auto;
+	margin-top: 127px;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 4px solid rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+	overflow: hidden;
+	transition-duration: 0.2s;
+}
+
+#fingerprint-content:hover {
+	border: 4px solid rgb(255, 255, 255, 1);
+}
+
+.fingerprint-default {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	background-image: url(media/img/fingerprint1.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	opacity: 0.5;
+	transition-duration: 1.2s;
+}
+
+.fingerprint-active {
+	position: absolute;
+	width: 120px;
+	height: 0px;
+	background-image: url(media/img/fingerprint1.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	transition-duration: 1.2s;
+	bottom: 0;
+}
+
+.fingerprint-active.active {
+   
+	height: 120px;
+}
+.fingerprint-bar {
+	width: 126px;
+	height: 3px;
+	border-radius: 3px;
+	position: absolute;
+	bottom: -3px;
+	transition-duration: 1.2s;
+}
+
+.fingerprint-bar.active {
+	bottom: 123px;
+}
+
+#result {
+	position: absolute;
+	top: 20px;
+	width: 820px;
+	padding: 25px 40px;
+	font-size: 16px;
+}

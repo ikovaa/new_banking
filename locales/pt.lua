@@ -1,0 +1,16 @@
+Locales['pt'] = {
+    ['bank_blip'] = 'Banco',
+	['anyatm_near'] = 'Nenhum ATM perto',
+	['anybank_near'] = 'Nenhum Bank perto',
+	['invalid_amount'] = 'Valor Inválido',
+	['deposit'] = 'Depositar: ',
+	['withdraw'] = 'Levantamento: ',
+	['remove_card'] = 'Remover Cartão',
+	['insert_card'] = 'Inserir Cartão',
+	['nice_try'] = "Não podes transferir para ti menos",
+	['transfered'] = 'Transferência:  ',
+	['recived'] = 'Recebido: ',
+	['to'] = ' para ',
+	['from'] = ' de ',
+	['not_found'] = 'Não Encontrado',
+}

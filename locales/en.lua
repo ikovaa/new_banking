@@ -1,0 +1,16 @@
+Locales['en'] = {
+    ['bank_blip'] = 'Bank',
+	['anyatm_near'] = 'Any ATM near',
+	['anybank_near'] = 'Any Bank near',
+	['invalid_amount'] = 'Invalid Amount',
+	['deposit'] = 'Deposit: ',
+	['withdraw'] = 'Withdraw: ',
+	['remove_card'] = 'Remove Card',
+	['insert_card'] = 'Insert Card',
+	['nice_try'] = "Can't transfer money to yourself",
+	['transfered'] = 'Transfered:  ',
+	['recived'] = 'Recived: ',
+	['to'] = ' to ',
+	['from'] = ' from ',
+	['not_found'] = 'Not Found',
+}

@@ -1,0 +1,16 @@
+Locales['fr'] = {
+    ['bank_blip'] = 'Banque',
+	['anyatm_near'] = 'Pas de ATM à proximité',
+	['anybank_near'] = 'Pas de Banque à proximité',
+	['invalid_amount'] = 'Valeur Invalide',
+	['deposit'] = 'Dépôt: ',
+	['withdraw'] = 'Levage: ',
+	['remove_card'] = 'Retirer la Carte',
+	['insert_card'] = 'Insérer la Carte',
+	['nice_try'] = "Vous ne pouvez pas vous transférer d'argent",
+	['transfered'] = 'Transfert:  ',
+	['recived'] = 'Reçu: ',
+	['to'] = ' pour ',
+	['from'] = ' dans ',
+	['not_found'] = 'Pas Trouvé',
+}
