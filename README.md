@@ -1,5 +1,5 @@
 # new_banking Redesign
-Original Link ( https://github.com/NewWayRP/new_banking/blob/master/client/client.lua )
+Original Link ( https://github.com/NewWayRP/new_banking )
 
 # Dependencies 
 
