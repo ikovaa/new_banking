@@ -3,6 +3,7 @@ Config = {}
 Config.Locale = 'en'
 Config.ShowBlips = true
 Config.ProgressBars = false
+Config.UseMythic = true
 Config.Id = 106
 
 Config.Animation = {
