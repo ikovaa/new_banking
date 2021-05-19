@@ -91,7 +91,7 @@ exports['bt-target']:AddBoxZone("Pacific-standard", vector3(247.66, 223.78, 106.
 }, {
 	options = {
 	{
-	event = 'banking:showMeBankMoney',
+	event = 'banking:showMeMoney',
 	icon = "fas fa-money-bill-wave",
 	label = "Access Bank Account.",
 	},
@@ -109,7 +109,7 @@ exports['bt-target']:AddBoxZone("Hawick Avenu-Bank", vector3(313.84, -279.69, 53
 }, {
 	options = {
 	{
-	event = 'banking:showMeBankMoney',
+	event = 'banking:showMeMoney',
 	icon = "fas fa-money-bill-wave",
 	label = "Access Bank Account.",
 	},
@@ -127,7 +127,7 @@ exports['bt-target']:AddBoxZone("Hawick Avenue-Bank2", vector3(-351.82, -50.28, 
 }, {
 	options = {
 	{
-	event = 'banking:showMeBankMoney',
+	event = 'banking:showMeMoney',
 	icon = "fas fa-money-bill-wave",
 	label = "Access Bank Account.",
 	},
@@ -145,7 +145,7 @@ exports['bt-target']:AddBoxZone("Boulevard Del-Perro-Bank", vector3(-1212.96, -3
 }, {
 	options = {
 	{
-	event = 'banking:showMeBankMoney',
+	event = 'banking:showMeMoney',
 	icon = "fas fa-money-bill-wave",
 	label = "Access Bank Account.",
 	},
@@ -163,7 +163,7 @@ exports['bt-target']:AddBoxZone("Vespucci Boulevard-Bank", vector3(149.06, -1041
 }, {
 	options = {
 	{
-	event = 'banking:showMeBankMoney',
+	event = 'banking:showMeMoney',
 	icon = "fas fa-money-bill-wave",
 	label = "Access Bank Account.",
 	},
@@ -181,7 +181,7 @@ exports['bt-target']:AddBoxZone("Great Ocean Highway-Bank", vector3(-2962.18, 48
 }, {
 	options = {
 	{
-	event = 'banking:showMeBankMoney',
+	event = 'banking:showMeMoney',
 	icon = "fas fa-money-bill-wave",
 	label = "Access Bank Account.",
 	},
@@ -199,7 +199,7 @@ exports['bt-target']:AddBoxZone("Route 68-Bank", vector3(1175.67, 2707.55, 37.89
 }, {
 	options = {
 	{
-	event = 'banking:showMeBankMoney',
+	event = 'banking:showMeMoney',
 	icon = "fas fa-money-bill-wave",
 	label = "Access Bank Account.",
 	},
@@ -217,7 +217,7 @@ exports['bt-target']:AddBoxZone("Grapeseed-Bank", vector3(1652.55, 4851.05, 41.8
 }, {
 	options = {
 	{
-	event = 'banking:showMeBankMoney',
+	event = 'banking:showMeMoney',
 	icon = "fas fa-money-bill-wave",
 	label = "Access Bank Account.",
 	},
@@ -235,7 +235,7 @@ exports['bt-target']:AddBoxZone("Blaine County Savings-Bank", vector3(-112.07, 6
 }, {
 	options = {
 	{
-	event = 'banking:showMeBankMoney',
+	event = 'banking:showMeMoney',
 	icon = "fas fa-money-bill-wave",
 	label = "Access Bank Account.",
 	},
@@ -245,8 +245,8 @@ exports['bt-target']:AddBoxZone("Blaine County Savings-Bank", vector3(-112.07, 6
 })
 
 
-RegisterNetEvent('banking:showMeBankMoney')
-AddEventHandler('banking:showMeBankMoney', function()
+RegisterNetEvent('banking:showMeMoney')
+AddEventHandler('banking:showMeMoney', function()
 	openUI() --if this doesn't work then drop the contents of the openUI() function at the bottom and call it a day.
 end)
 
