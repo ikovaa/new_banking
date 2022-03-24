@@ -12,7 +12,7 @@ AddEventHandler('bank:deposit', function(amount)
     local xPlayer = ESX.GetPlayerFromId(_source)
     if amount <= 0 then
 	if Config.UseMythic then
-        	TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'inform', text = _U("invalid_amount"), length = 2500})
+		TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'inform', text = _U("invalid_amount"), length = 2500})
 	end
     else
         if amount > xPlayer.getMoney() then
@@ -35,7 +35,7 @@ AddEventHandler('bank:withdraw', function(amount)
     base = xPlayer.getAccount('bank').money
     if amount <= 0 then
 	if Config.UseMythic then
-        	TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = _U("invalid_amount"), length = 2500})
+		TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = _U("invalid_amount"), length = 2500})
 	end
     else
         if amount > base then
@@ -55,7 +55,6 @@ AddEventHandler('bank:balance', function()
     local xPlayer = ESX.GetPlayerFromId(_source)
     balance = xPlayer.getAccount('bank').money
     TriggerClientEvent('currentbalance1', _source, balance)
-
 end)
 
 RegisterServerEvent('bank:transfer')
@@ -64,7 +63,7 @@ AddEventHandler('bank:transfer', function(to, amountt)
     local xPlayer = ESX.GetPlayerFromId(_source)
     local zPlayer = ESX.GetPlayerFromId(to)
     local balance = 0
-    	if zPlayer ~= nil and GetPlayerEndpoint(to) ~= nil then
+	if zPlayer ~= nil and GetPlayerEndpoint(to) ~= nil then
 		balance = xPlayer.getAccount('bank').money
 		zbalance = zPlayer.getAccount('bank').money
 		if tonumber(_source) == tonumber(to) then
@@ -72,25 +71,22 @@ AddEventHandler('bank:transfer', function(to, amountt)
 				TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = _U("nice_try"), length = 2500})
 			end
 		else
-		    	if balance <= 0 or balance < tonumber(amountt) or tonumber(amountt) <= 0 then
+			if balance <= 0 or balance < tonumber(amountt) or tonumber(amountt) <= 0 then
 				if Config.UseMythic then
 					TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = _U("invalid_amount"), length = 2500})
 				end
-		    	else
+			else
 				xPlayer.removeAccountMoney('bank', tonumber(amountt))
 				zPlayer.addAccountMoney('bank', tonumber(amountt))
-					
 				if Config.UseMythic then
 					TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'success', text = _U("transfered") .. amount .. _U('to') .. to, length = 2500})
 					TriggerClientEvent('mythic_notify:client:SendAlert', to, { type = 'success', text = _U("recived") .. amount .. _U('from') .. _source, length = 2500})
 				end
-		    	end
-
+			end
 		end
 	else
-			if Config.UseMythic then
-				TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = _U("not_found"), length = 2500})
-			end
-    	end
-
+		if Config.UseMythic then
+			TriggerClientEvent('mythic_notify:client:SendAlert', source, { type = 'error', text = _U("not_found"), length = 2500})
+		end
+	end
 end)
