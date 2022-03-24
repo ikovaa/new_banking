@@ -1,14 +1,15 @@
 fx_version 'cerulean'
 author 'ikova'
-description 'new_banking remake'
+description 'new_banking Remake'
+version '2.1.0'
 
 ui_page('client/html/UI.html') --THIS IS IMPORTANT
 
 
 shared_scripts {
-'config.lua',
-'locale.lua',
-'locales/*.lua', 
+	'config.lua',
+	'locale.lua',
+	'locales/*.lua',
 }
 
 server_scripts {  
@@ -27,10 +28,8 @@ client_scripts {
 
 export 'openUI'
 
---[[The following is for the files which are need for you UI (like, pictures, the HTML file, css and so on) ]]--
 files {
-	'client/html/UI.html',
-    'client/html/style.css',
+	'client/html/*.*',
     'client/html/media/font/*.otf',
     'client/html/media/img/*.png',
     'locale.js',
