@@ -61,6 +61,196 @@ Citizen.CreateThread(function()
 end)
 
 
+local atmFleeca = {
+    `prop_fleeca_atm`,
+    `prop_atm_03`,
+    `prop_atm_01`,
+    `prop_atm_02`,
+}
+
+exports['bt-target']:AddTargetModel(atmFleeca, {
+    options = {
+        {
+            event = "banking:showMeMoney",
+            icon = "fas fa-credit-card",
+            label = "Use ATM",
+        },
+    },
+    job = {"all"},
+    distance = 1.5
+})
+
+-- Banks
+
+exports['bt-target']:AddBoxZone("Pacific-standard", vector3(247.66, 223.78, 106.29), 0.5, 12.5, {
+	name= "Pacific-standard",
+	heading= 342.50,
+	debugPoly= false,
+	minZ= 105.29,
+	maxZ= 106.99
+}, {
+	options = {
+	{
+	event = 'banking:showMeMoney',
+	icon = "fas fa-money-bill-wave",
+	label = "Access Bank Account.",
+	},
+},
+	job = {"all"},
+	distance = 3.0
+})
+
+exports['bt-target']:AddBoxZone("Hawick Avenu-Bank", vector3(313.84, -279.69, 53.37), 1.0, 3.8, {
+	name= "bennys-shop",
+	heading= 163.17,
+	debugPoly= false,
+	minZ= 53.27,
+	maxZ= 54.99
+}, {
+	options = {
+	{
+	event = 'banking:showMeMoney',
+	icon = "fas fa-money-bill-wave",
+	label = "Access Bank Account.",
+	},
+},
+	job = {"all"},
+	distance = 2.5
+})
+
+exports['bt-target']:AddBoxZone("Hawick Avenue-Bank2", vector3(-351.82, -50.28, 48.54), 1.0, 3.8, {
+	name= "Hawick Avenue-Bank2",
+	heading= 180.00,
+	debugPoly= false,
+	minZ= 48.44,
+	maxZ= 49.99
+}, {
+	options = {
+	{
+	event = 'banking:showMeMoney',
+	icon = "fas fa-money-bill-wave",
+	label = "Access Bank Account.",
+	},
+},
+	job = {"all"},
+	distance = 2.5
+})
+
+exports['bt-target']:AddBoxZone("Boulevard Del-Perro-Bank", vector3(-1212.96, -331.67, 37.79), 1.5, 4.0, {
+	name= "Boulevard Del-Perro-Bank",
+	heading= 207.85,
+	debugPoly= false,
+	minZ= 37.00,
+	maxZ= 38.00
+}, {
+	options = {
+	{
+	event = 'banking:showMeMoney',
+	icon = "fas fa-money-bill-wave",
+	label = "Access Bank Account.",
+	},
+},
+	job = {"all"},
+	distance = 3.5
+})
+
+exports['bt-target']:AddBoxZone("Vespucci Boulevard-Bank", vector3(149.06, -1041.02, 28.47), 1.0, 3.8, {
+	name= "Vespucci Boulevard-Bank",
+	heading= 160.00,
+	debugPoly= false,
+	minZ= 28.44,
+	maxZ= 29.99
+}, {
+	options = {
+	{
+	event = 'banking:showMeMoney',
+	icon = "fas fa-money-bill-wave",
+	label = "Access Bank Account.",
+	},
+},
+	job = {"all"},
+	distance = 2.5
+})
+
+exports['bt-target']:AddBoxZone("Great Ocean Highway-Bank", vector3(-2962.18, 482.17, 15.5), 1.0, 3.8, {
+	name= "Great Ocean Highway-Bank",
+	heading= 269.57,
+	debugPoly= false,
+	minZ= 14.44,
+	maxZ= 15.99
+}, {
+	options = {
+	{
+	event = 'banking:showMeMoney',
+	icon = "fas fa-money-bill-wave",
+	label = "Access Bank Account.",
+	},
+},
+	job = {"all"},
+	distance = 2.5
+})
+
+exports['bt-target']:AddBoxZone("Route 68-Bank", vector3(1175.67, 2707.55, 37.89), 1.0, 3.8, {
+	name= "Route 68-Bank",
+	heading= 0.57,
+	debugPoly= false,
+	minZ= 37.19,
+	maxZ= 38.99
+}, {
+	options = {
+	{
+	event = 'banking:showMeMoney',
+	icon = "fas fa-money-bill-wave",
+	label = "Access Bank Account.",
+	},
+},
+	job = {"all"},
+	distance = 2.5
+})
+
+exports['bt-target']:AddBoxZone("Grapeseed-Bank", vector3(1652.55, 4851.05, 41.82), 1.0, 3.8, {
+	name= "Grapeseed-Bank",
+	heading= 97.14,
+	debugPoly= false,
+	minZ= 41.69,
+	maxZ= 42.99
+}, {
+	options = {
+	{
+	event = 'banking:showMeMoney',
+	icon = "fas fa-money-bill-wave",
+	label = "Access Bank Account.",
+	},
+},
+	job = {"all"},
+	distance = 2.5
+})
+
+exports['bt-target']:AddBoxZone("Blaine County Savings-Bank", vector3(-112.07, 6470.23, 30.82), 1.0, 3.8, {
+	name= "Blaine County Savings-Bank",
+	heading= 316.09,
+	debugPoly= false,
+	minZ= 30.69,
+	maxZ= 31.99
+}, {
+	options = {
+	{
+	event = 'banking:showMeMoney',
+	icon = "fas fa-money-bill-wave",
+	label = "Access Bank Account.",
+	},
+},
+	job = {"all"},
+	distance = 2.5
+})
+
+
+RegisterNetEvent('banking:showMeMoney')
+AddEventHandler('banking:showMeMoney', function()
+	openUI() --if this doesn't work then drop the contents of the openUI() function at the bottom and call it a day.
+end)
+
+
 --===============================================
 --==           Deposit Event                   ==
 --===============================================
