@@ -8,12 +8,11 @@
 
 ### Instalation
 1) Add `new_banking` to your server.cfg
-2) Drag the folder it into your resources folder
-3) Modify as you wish
+2) Drag the folder into your resources folder
+3) Enjoy
 
 ## Usage
 > Use your Third Eye keybind near any atm or bank
-
 
 ## Showcase
 ![](/images/Screenshot_1.png)
